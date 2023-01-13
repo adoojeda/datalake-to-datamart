@@ -28,7 +28,7 @@ public class Main {
             return gson.toJson("El recurso al que trata de acceder no existe");
         });
 
-        String url = "jdbc:sqlite:" + "/Users/adoojeda/Desktop/GCID/Primer semestre/DACD/aemet/datamart/src/main/java/org/example/table.db";
+        String url = "jdbc:sqlite:" + "/Users/adoojeda/Desktop/GCID/Primer semestre/DACD/aemet/datamart/src/main/java/org/example/datamart.db";
 
         Spark.get("/v1/places/with-max-temperature", ((req, res) -> {
             String from = req.queryParams("from");
